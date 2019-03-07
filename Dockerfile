@@ -4,7 +4,7 @@ EXPOSE 80
 
 FROM microsoft/dotnet:2.2-sdk-stretch AS build
 WORKDIR /src
-COPY ["hyspdrt-web.csproj", "/"]
+COPY ["hyspdrt-web.csproj", ""]
 RUN dotnet restore "hyspdrt-web.csproj"
 COPY . .
 WORKDIR "/src"
